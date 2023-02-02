@@ -23,7 +23,7 @@ def generate_html_download_link(fig):
 
 st.set_page_config(page_title='Excel Plotter')
 st.title('Excel Plotter')
-st.subheader('Feed me with your excel file')
+st.subheader('Feed me with your excel file :yum:')
 
 uploaded_file=st.file_uploader('Choose a XLSX file', type='xlsx')
 if uploaded_file:
