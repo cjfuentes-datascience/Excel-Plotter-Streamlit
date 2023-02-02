@@ -1,3 +1,3 @@
 # Excel-Plotter-Streamlit
 
-- Excel-Plotter: https://cjfuentes-datascience-excel-plotter-stream-excel-plotter-urkhnk.streamlit.app/
+- The Excel-Plotter is a web application that allows users to upload an excel file and generate plots based on the data. https://cjfuentes-datascience-excel-plotter-stream-excel-plotter-urkhnk.streamlit.app/
