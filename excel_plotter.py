@@ -32,7 +32,7 @@ if uploaded_file:
     st.dataframe(df)
     groupby_column=st.selectbox(
         'What would you like to analyze?',
-        ('Ship Mode', 'Segment', 'Category', 'Sub-Category',)
+        df.columns.tolist()
     )
 
     # -- GROUP DATAFRAME
