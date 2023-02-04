@@ -36,7 +36,7 @@ if uploaded_file:
     )
 
     # -- GROUP DATAFRAME
-    output_columns=['Sales', 'Profit']
+    output_columns=groupby_column
     df_grouped=df.groupby(by=[groupby_column], as_index=False)[output_columns].sum()
     #st.dataframe(df_grouped) # this shows the table
 
