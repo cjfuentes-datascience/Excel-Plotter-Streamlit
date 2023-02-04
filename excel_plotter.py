@@ -40,18 +40,7 @@ if uploaded_file:
     df_grouped=df.groupby(by=[groupby_column], as_index=False)[output_columns].sum()
     #st.dataframe(df_grouped) # this shows the table
 
-    # -- PLOT DATAFRAME
-    fig=px.bar(
-        df_grouped,
-        x=groupby_column,
-        y='Sales',
-        color='Profit',
-        color_continuous_scale=['red', 'yellow', 'green'],
-        title=f'<b>Sales & Profit by {groupby_column}</b>'
-    )
+    # -- PLOT
+    fig = px.bar(df_grouped, x=groupby_column, y=output_columns, color=groupby_column, height=400)
     st.plotly_chart(fig)
-
-    # -- DOWNLOAD SECTION
-    st.subheader('Download:')
-    generate_excel_download_link(df_grouped)
     generate_html_download_link(fig)
